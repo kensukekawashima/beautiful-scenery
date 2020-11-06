@@ -1,0 +1,31 @@
+<header id="header">
+  <div class="header-inner">
+    <nav class="d-flex justify-content-center navbar-dark bg-dark px-5 py-2">
+      <ul class="left-side-navs navbar-nav flex-row justify-content-end">
+        <li class="nav-item align-self-center">
+          <%= link_to "HOME", home_path, class:"nav-link font-italic sm-navs pr-5" %>
+        </li>
+        <li class="nav-item align-self-center">
+          <%= link_to "ABOUT", about_path, class:"nav-link font-italic sm-navs px-4" %>
+        </li>
+      </ul>
+      <div class="center-nav">
+        <%= link_to "Beautiful Scenery", home_path, class:"nav-link text-light font-italic navbar-brand logo mx-5 px-5" %>
+      </div>
+      <ul class="right-side-navs navbar-nav flex-row">
+         <li class="nav-item px-4 align-self-center">
+          <%= link_to "SIGN UP", "#", class:"nav-link font-italic sm-navs" %>
+        </li>
+        <li class="nav-item px-4 align-self-center">
+          <%= link_to "LOG IN", "#", class:"nav-link font-italic sm-navs" %>
+        </li>
+      </ul>
+    </nav>
+    <nav class="search-nav navbar navbar-light bg-light">
+      <form class="form-inline">
+        <input class="form-control mer-sm-2" type="text" placeholder="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0 mx-2" type="submit">Search</button>
+      </form>
+    </nav>
+  </div>
+</header>

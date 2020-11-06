@@ -1,0 +1,143 @@
+// Place all the styles related to the statics controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.left-side-navs {
+  width: 350px;
+}
+.right-side-navs {
+  width: 350px;
+}
+.center-navs {
+  width: 350px;
+}
+.sm-navs {
+  font-size: 1.2rem;
+  line-height: 100%;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.animated-pics {
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+}
+.img {
+  display: block;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  animation: fadein 24s linear infinite;
+}
+
+.img2 {
+  animation-delay: 6s;
+}
+
+.img3 {
+  animation-delay: 12s;
+}
+
+.img4 {
+  animation-delay: 18s;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  8% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  28% {
+    opacity: 0;
+    transform: scale(1.5, 1.5);
+  }
+}
+
+.recommended-pic {
+  display: grid;
+  grid-template-rows: 300px 300px;
+  grid-template-columns: 280px 280px 280px;
+  width: 280 * 3px;
+  a {
+    text-decoration: none;
+    color: gray;
+    transition: all .5s;
+    &:hover{
+      box-shadow: 0 0 5px 5px #b4b2b2;
+      transform: scaleY(10px);
+    }
+  }
+}
+.recommended-img {
+  height: 200px;
+}
+.card1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  height: 280px;
+}
+.card2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  height: 280px;
+}
+.card3 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  height: 280px;
+}
+.card4 {
+  grid-row-start: 1;
+  grid-column-end: 2;
+  grid-row: 2;
+  height: 280px;
+}
+.card5 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row: 2;
+  height: 280px;
+}
+.card6 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row: 2;
+  height: 280px;
+}
+
+// about
+.dark-pic {
+  height: 600px;
+  background-image: url(../../assets/images/2.jpg);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  &::before {
+    background-color: rgba(0,0,0,0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: '';
+  }
+  h2 {
+    color: whitesmoke;
+    font-size: 2.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+}
